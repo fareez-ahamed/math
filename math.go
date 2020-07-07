@@ -55,3 +55,11 @@ func BoundUnt(val, min, max uint) uint {
 		return val
 	}
 }
+
+// CeilAfterDiv Returns ceiling value after dividing
+func CeilAfterDiv(num, denom int) int {
+	if num%denom == 0 {
+		return num / denom
+	}
+	return (num / denom) + 1
+}
